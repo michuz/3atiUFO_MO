@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2d;
     public float speed;
-    private int licznik;
+    int licznik;
+    public Text scoreText;
+    public Text winText;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        licznik = 0;
     }
 
     private void FixedUpdate()
@@ -26,7 +30,16 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(collision.gameObject);
             licznik++;
-            Debug.Log(licznik);
+            UpdateScore();
         }
+    }
+
+    void UpdateScore()
+    {
+        scoreText.text = $"Score: {licznik.ToString()}";
+        if(licznik == 5)
+        {
+            winText.gameObject.SetActive(true);
+        }    
     }
 }
