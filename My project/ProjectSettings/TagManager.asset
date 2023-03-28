@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3818905191
+    locked: 0
+  - name: UFO
+    uniqueID: 692700517
+    locked: 0
+  - name: Pickup
+    uniqueID: 3225151221
+    locked: 0

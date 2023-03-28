@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
         if(licznik == 5)
         {
             winText.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(false);
         }    
     }
 }
