@@ -826,10 +826,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af1d7e369413644eb97e3982b8b090b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: []
-  ufo_move: []
-  coin_pickup: []
-  wall_hit: []
+  music:
+  - name: music
+    audioClip: {fileID: 8300000, guid: 71f8b74707ac0b24983c9e68a5494128, type: 3}
+  sfx:
+  - name: pickup
+    audioClip: {fileID: 8300000, guid: 7d21027e943919f479ca700de031e638, type: 3}
+  - name: move
+    audioClip: {fileID: 8300000, guid: e7cd7c213f2b75b4292b3106ffc96e74, type: 3}
+  - name: hit
+    audioClip: {fileID: 8300000, guid: 51b6acb844d55754a99fe2d71eec1c1c, type: 3}
   musicSource: {fileID: 2081348971}
   sfxSource: {fileID: 1771730651}
 --- !u!4 &1729001076
@@ -842,7 +848,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2081348972}
+  - {fileID: 1771730652}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -930,7 +938,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7d21027e943919f479ca700de031e638, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1023,12 +1031,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771730650}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1729001076}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1853153275
 PrefabInstance:
@@ -1360,7 +1368,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 71f8b74707ac0b24983c9e68a5494128, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1453,10 +1461,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081348970}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1729001076}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
