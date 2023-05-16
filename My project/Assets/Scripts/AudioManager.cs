@@ -9,6 +9,9 @@ public class AudioManager : MonoBehaviour
     public Sound[] coin_pickup;
     public Sound[] wall_hit;
 
+    public AudioSource musicSource;
+    public AudioSource sfxSource;
+
     void Start()
     {
         
